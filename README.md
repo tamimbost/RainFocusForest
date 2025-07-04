@@ -192,12 +192,6 @@ Then open a **Pull Request** on GitHub.
 
 ---
 
-## 🖼 Screenshots
-
-> Place your screenshots inside: `assets/screenshots/`
-
----
-
 ## 📬 Contact
 
 Need help or want to say hi?

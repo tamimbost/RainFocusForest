@@ -34,7 +34,7 @@ Built with **Electron** + **React**, it offers a minimal, distraction-free inter
 ## 📦 Download
 
 👉 [Download the latest release](https://github.com/tamimbost/RainFocusForest/)  
-Windows `.exe` installer and portable version available.
+Windows `RainFocusForest Setup 1.0.0.exe` installer and portable version available.
 
 ---
 

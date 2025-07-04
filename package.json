@@ -1,0 +1,72 @@
+{
+  "name": "rainfocusforest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A focused productivity and routine tracking desktop app inspired by the rainforest.",
+  "author": "Saiful Islam Tamim",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "5.0.1",
+    "recharts": "^3.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.6.0",
+    "wait-on": "^8.0.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  },
+  "build": {
+    "appId": "com.rainfocusforest.app",
+    "productName": "RainFocusForest",
+    "copyright": "Copyright © 2025 Saiful Islam Tamim",
+    "files": [
+      "build/**/*",
+      "public/electron.js",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "RainFocusForest",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
